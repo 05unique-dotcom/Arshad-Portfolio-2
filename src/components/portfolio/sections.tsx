@@ -490,8 +490,8 @@ export function Contact() {
                 <ContactRow
                   icon={Mail}
                   label="Email"
-                  value="arshad.ansari@example.com"
-                  href="mailto:arshad.ansari@example.com"
+                  value="05unique7057@gmail.com"
+                  href="mailto:05unique7057@gmail.com"
                 />
                 <ContactRow
                   icon={Github}
@@ -640,7 +640,7 @@ export function Footer() {
             <Linkedin className="h-4 w-4" />
           </a>
           <a
-            href="mailto:arshad.ansari@example.com"
+            href="mailto:05unique7057@gmail.com"
             aria-label="Email"
             className="rounded-lg p-2 hover:bg-white/5 hover:text-foreground"
           >
