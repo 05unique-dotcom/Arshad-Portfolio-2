@@ -77,21 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Arshad Ansari — Aspiring Computer Science Student & AI Developer" },
+      { title: "Arshad Ansari - Computer Science Student & AI Developer" },
       {
         name: "description",
         content:
-          "Portfolio of Arshad Ansari — an aspiring Computer Science student passionate about Python, AI, Machine Learning, Web Development, and building practical projects.",
+          "Portfolio of Arshad Ansari - Aspiring Computer Science student passionate about Python, AI, Machine Learning, Web Development, and building practical projects.",
       },
       { name: "author", content: "Arshad Ansari" },
-      { property: "og:title", content: "Arshad Ansari — Aspiring Computer Science Student & AI Developer" },
+      { property: "og:title", content: "Arshad Ansari - Computer Science Student & AI Developer" },
       {
         property: "og:description",
         content:
-          "Aspiring Computer Science student passionate about Python, AI, ML, and Web Development. Explore projects, skills, and achievements.",
+          "Portfolio of Arshad Ansari - Aspiring Computer Science student passionate about Python, AI, Machine Learning, Web Development, and building practical projects.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Arshad Ansari - Computer Science Student & AI Developer" },
+      { name: "twitter:description", content: "Portfolio of Arshad Ansari - Aspiring Computer Science student passionate about Python, AI, Machine Learning, Web Development, and building practical projects." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a5bbb73b-4857-4570-97ac-ed1437f12e5e/id-preview-7ff1ba1b--07718c20-0d0b-4117-a4d7-2d5772a20678.lovable.app-1783917521398.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a5bbb73b-4857-4570-97ac-ed1437f12e5e/id-preview-7ff1ba1b--07718c20-0d0b-4117-a4d7-2d5772a20678.lovable.app-1783917521398.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
