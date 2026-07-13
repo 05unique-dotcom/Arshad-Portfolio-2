@@ -316,7 +316,7 @@ const education = [
   },
   {
     level: "B.E.",
-    title: "Bachelor of Engineering",
+    title: "upcoming Bachelor of Engineering",
     desc: "Undergraduate studies focused on software engineering, algorithms, and AI/ML.",
   },
 ];
