@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Arshad Ansari — Software Engineering Student & AI Developer" },
+      { title: "Arshad Ansari — Aspiring Computer Science Student & AI Developer" },
       {
         name: "description",
         content:
-          "Portfolio of Arshad Ansari — Software Engineering student, AI & Machine Learning enthusiast, and Python developer building intelligent applications and modern web experiences.",
+          "Portfolio of Arshad Ansari — an aspiring Computer Science student passionate about Python, AI, Machine Learning, Web Development, and building practical projects.",
       },
       { name: "author", content: "Arshad Ansari" },
-      { property: "og:title", content: "Arshad Ansari — Software Engineering Student & AI Developer" },
+      { property: "og:title", content: "Arshad Ansari — Aspiring Computer Science Student & AI Developer" },
       {
         property: "og:description",
         content:
-          "Software Engineering student building AI, ML, and Python-powered applications. Explore projects, skills, and achievements.",
+          "Aspiring Computer Science student passionate about Python, AI, ML, and Web Development. Explore projects, skills, and achievements.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

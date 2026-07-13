@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Github,
   Mail,
-  Linkedin,
   ExternalLink,
   Star,
   GitBranch,
@@ -53,9 +52,9 @@ export function Hero() {
         </Reveal>
         <Reveal delay={160}>
           <p className="mt-5 text-base font-medium text-muted-foreground sm:text-lg">
-            <Typewriter
+          <Typewriter
               words={[
-                "Software Engineering Student",
+                "Aspiring Computer Science Student",
                 "AI & Machine Learning Enthusiast",
                 "Python Developer",
               ]}
@@ -102,18 +101,19 @@ export function About() {
           <Reveal className="md:col-span-3">
             <div className="glass rounded-2xl p-6 md:p-8">
               <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
-                I'm a Software Engineering student with a strong passion for building things that
-                matter — from clean, responsive interfaces to intelligent systems that learn from
-                data. My focus lies at the intersection of{" "}
-                <span className="text-foreground">Artificial Intelligence, Machine Learning</span>{" "}
-                and <span className="text-foreground">Python development</span>, where I love
-                turning ideas into working products.
+                I'm an aspiring Computer Science student who is passionate about turning ideas into
+                real, practical projects. My interests span across{" "}
+                <span className="text-foreground">Python</span>,{" "}
+                <span className="text-foreground">Artificial Intelligence</span>,{" "}
+                <span className="text-foreground">Machine Learning</span>, and{" "}
+                <span className="text-foreground">Web Development</span> — fields where I love
+                experimenting, learning by building, and solving meaningful problems through code.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                Whether I'm exploring a new framework, contributing to open-source, or refining an
-                algorithm, I approach every problem with curiosity, discipline, and a deep
-                commitment to continuous learning. I believe great software is equal parts logic,
-                empathy, and craft.
+                While I'm preparing to begin my formal Computer Science journey, I spend my time
+                building hands-on projects, exploring new technologies, and strengthening my
+                foundation in software engineering. I believe the best way to learn is to create,
+                and I'm always excited to take on challenges that help me grow as a developer.
               </p>
             </div>
           </Reveal>
@@ -499,12 +499,6 @@ export function Contact() {
                   value="@05unique-dotcom"
                   href="https://github.com/05unique-dotcom"
                 />
-                <ContactRow
-                  icon={Linkedin}
-                  label="LinkedIn"
-                  value="Arshad Ansari"
-                  href="https://www.linkedin.com/"
-                />
                 <ContactRow icon={MapPin} label="Location" value="India" />
               </div>
               <p className="mt-6 text-xs text-muted-foreground">
@@ -629,15 +623,6 @@ export function Footer() {
             className="rounded-lg p-2 hover:bg-white/5 hover:text-foreground"
           >
             <Github className="h-4 w-4" />
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-            className="rounded-lg p-2 hover:bg-white/5 hover:text-foreground"
-          >
-            <Linkedin className="h-4 w-4" />
           </a>
           <a
             href="mailto:05unique7057@gmail.com"
