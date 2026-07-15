@@ -6,6 +6,7 @@ export function Particles() {
   useEffect(() => {
     const canvas = ref.current;
     if (!canvas) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
