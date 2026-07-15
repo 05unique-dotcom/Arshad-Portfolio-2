@@ -122,14 +122,28 @@
 @utility glass {
   background: color-mix(in oklab, var(--card) 55%, transparent);
   backdrop-filter: blur(16px) saturate(140%);
-  border: 1px solid oklch(1 0 0 / 0.08);
+  border: 1px solid var(--color-border);
 }
 
 @utility glow-ring {
   box-shadow:
-    0 0 0 1px oklch(1 0 0 / 0.06),
+    0 0 0 1px var(--color-border),
     0 20px 60px -20px oklch(0.5 0.2 280 / 0.4);
 }
+
+.light body {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 20% 0%, oklch(0.75 0.12 265 / 0.35), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 90% 20%, oklch(0.78 0.14 305 / 0.28), transparent 65%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, oklch(0.78 0.12 285 / 0.25), transparent 65%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow, .animate-float-slower { animation: none; }
+  .reveal, .reveal.in-view { animation: none; opacity: 1; }
+  html { scroll-behavior: auto; }
+}
+
 
 @keyframes float-slow {
   0%, 100% { transform: translateY(0) translateX(0); }
