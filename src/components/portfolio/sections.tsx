@@ -482,8 +482,8 @@ export function Contact() {
                 <ContactRow
                   icon={Linkedin}
                   label="LinkedIn"
-                  value="arshad-ansari"
-                  href="https://linkedin.com/in/arshad-ansari"
+                  value="arshad-ansari-6a1a09416"
+                  href="https://www.linkedin.com/in/arshad-ansari-6a1a09416"
                 />
                 <ContactRow icon={MapPin} label="Location" value="India" />
               </div>
