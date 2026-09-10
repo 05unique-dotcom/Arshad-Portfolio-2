@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Github,
   Mail,
+  Linkedin,
   ExternalLink,
   Star,
   Trophy,
@@ -49,8 +50,7 @@ export function Hero() {
           <p className="mt-5 text-base font-medium text-muted-foreground sm:text-lg">
           <Typewriter
               words={[
-                "Aspiring Computer Science Student",
-                "CSE Student | Python & Web Developer in the Making",
+                "CSE (Data Science) Student at VIT Pune | Python & Web Dev",
                 "Python Developer",
               ]}
               className="text-foreground"
@@ -478,6 +478,12 @@ export function Contact() {
                   label="GitHub"
                   value="@05unique-dotcom"
                   href="https://github.com/05unique-dotcom"
+                />
+                <ContactRow
+                  icon={Linkedin}
+                  label="LinkedIn"
+                  value="arshad-ansari"
+                  href="https://linkedin.com/in/arshad-ansari"
                 />
                 <ContactRow icon={MapPin} label="Location" value="India" />
               </div>
