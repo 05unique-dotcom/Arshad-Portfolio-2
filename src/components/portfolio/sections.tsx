@@ -5,20 +5,15 @@ import {
   Mail,
   ExternalLink,
   Star,
-  GitBranch,
   Trophy,
   GraduationCap,
   Sparkles,
   Send,
   Code,
   Brain,
-  Database,
-  FileCode2,
   Braces,
-  Palette,
   Layers,
-  Cpu,
-  Boxes,
+  Palette,
   Workflow,
   MapPin,
 } from "lucide-react";
@@ -55,7 +50,7 @@ export function Hero() {
           <Typewriter
               words={[
                 "Aspiring Computer Science Student",
-                "AI & Machine Learning Enthusiast",
+                "CSE Student | Python & Web Developer in the Making",
                 "Python Developer",
               ]}
               className="text-foreground"
@@ -101,19 +96,10 @@ export function About() {
           <Reveal className="md:col-span-3">
             <div className="glass rounded-2xl p-6 md:p-8">
               <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
-                I'm an aspiring Computer Science student who is passionate about turning ideas into
-                real, practical projects. My interests span across{" "}
-                <span className="text-foreground">Python</span>,{" "}
-                <span className="text-foreground">Artificial Intelligence</span>,{" "}
-                <span className="text-foreground">Machine Learning</span>, and{" "}
-                <span className="text-foreground">Web Development</span> — fields where I love
-                experimenting, learning by building, and solving meaningful problems through code.
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                While I'm preparing to begin my formal Computer Science journey, I spend my time
-                building hands-on projects, exploring new technologies, and strengthening my
-                foundation in software engineering. I believe the best way to learn is to create,
-                and I'm always excited to take on challenges that help me grow as a developer.
+                I'm a Computer Science (Data Science) student at Vishwakarma Institute of
+                Technology, Pune. I enjoy building real projects using Python and web technologies.
+                I love experimenting with AI tools, learning by doing, and solving problems through
+                code.
               </p>
             </div>
           </Reveal>
@@ -146,17 +132,11 @@ export function About() {
 /* ============== SKILLS ============== */
 const skills: { name: string; icon: typeof Code }[] = [
   { name: "Python", icon: Code },
-  { name: "C++", icon: Braces },
-  { name: "Java", icon: FileCode2 },
   { name: "HTML", icon: Layers },
   { name: "CSS", icon: Palette },
   { name: "JavaScript", icon: Braces },
-  { name: "React", icon: Boxes },
-  { name: "Git", icon: GitBranch },
   { name: "GitHub", icon: Github },
-  { name: "SQL", icon: Database },
   { name: "AI & ML", icon: Brain },
-  { name: "DSA", icon: Cpu },
 ];
 
 export function Skills() {
@@ -205,21 +185,21 @@ const projects: Project[] = [
     tags: ["Python", "Learning", "Interactive"],
     stars: 0,
     repo: "https://github.com/05unique-dotcom/python-learner-app",
-    demo: "https://python-learner--05unique7057.replit.app",
+    demo: "https://python-learner--arshadansari786.replit.app/",
   },
   {
-    title: "Coming Soon",
+    title: "Nitro Rush Revamped",
     description:
-      "A new AI-powered project is in the works. Stay tuned for something built at the intersection of machine learning and thoughtful UX.",
-    tags: ["AI", "In progress"],
-    soon: true,
+      "A 3D browser racing game built with Three.js and WebGL. Features joystick controls, multiple vehicles, missions, and a leaderboard.",
+    tags: ["Three.js", "WebGL", "JavaScript"],
+    demo: "https://nitro-rush-revamped.lovable.app/",
   },
   {
-    title: "Coming Soon",
+    title: "PyStar",
     description:
-      "Placeholder for an upcoming full-stack project. Modern tooling, clean architecture, and a focus on real-world usefulness.",
-    tags: ["Full-stack", "In progress"],
-    soon: true,
+      "An interactive Python learning platform with quizzes and challenges.",
+    tags: ["Python", "React", "Web App"],
+    demo: "https://pystar.lovable.app/",
   },
 ];
 
@@ -315,9 +295,9 @@ const education = [
     desc: "Physics, Chemistry, Mathematics — strong preparation for engineering entrances.",
   },
   {
-    level: "B.E.",
-    title: "upcoming Bachelor of Engineering",
-    desc: "Engineering admission expected soon. Currently building projects and strengthening my programming skills in Python, AI/ML, and web development.",
+    level: "B.Tech",
+    title: "Computer Science & Engineering (Data Science)",
+    desc: "Vishwakarma Institute of Technology, Pune\n2026 – 2030",
   },
 ];
 
@@ -340,7 +320,7 @@ export function Education() {
                   <span>Milestone</span>
                 </div>
                 <h3 className="mt-2 text-base font-semibold sm:text-lg">{e.title}</h3>
-                <p className="mt-1.5 text-sm text-muted-foreground">{e.desc}</p>
+                <p className="mt-1.5 whitespace-pre-line text-sm text-muted-foreground">{e.desc}</p>
               </div>
             </Reveal>
           ))}
