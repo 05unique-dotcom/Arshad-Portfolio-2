@@ -63,8 +63,11 @@ for (const entry of fs.readdirSync(distClient)) {
 //    from a subpath.
 let html = fs.readFileSync(path.join(outDir, "index.html"), "utf8");
 html = html
+  .replaceAll('"/Arshad-Portfolio-2/assets/', '"./assets/')
+  .replaceAll('"/Arshad-Portfolio-2/favicon.ico', '"./favicon.ico')
   .replaceAll('"/assets/', '"./assets/')
   .replaceAll('"/favicon.ico', '"./favicon.ico')
+  .replaceAll('href="/Arshad-Portfolio-2/"', 'href="./"')
   .replaceAll('href="/"', 'href="./"');
 fs.writeFileSync(path.join(outDir, "index.html"), html);
 
