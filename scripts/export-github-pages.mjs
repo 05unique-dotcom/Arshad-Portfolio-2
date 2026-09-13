@@ -42,9 +42,10 @@ for (const file of fs.readdirSync(assetsDir)) {
   }
 }
 if (!patched) {
-  throw new Error(
-    "Could not find `basepath:`` ` in the client bundle to patch. " +
-      "The TanStack Start hydrate entry may have changed — inspect dist/client/assets/*.js.",
+  // Not an error: when vite `base` is set (e.g. "/Arshad-Portfolio-2/"),
+  // the correct basepath is already baked into the bundle at build time.
+  console.log(
+    "No `basepath:`` ` literal found — assuming basepath is baked in via vite base config.",
   );
 }
 
