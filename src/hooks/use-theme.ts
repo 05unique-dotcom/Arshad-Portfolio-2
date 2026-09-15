@@ -6,7 +6,7 @@ function readTheme(): Theme {
   if (typeof window === "undefined") return "dark";
   const stored = window.localStorage.getItem("theme");
   if (stored === "light" || stored === "dark") return stored;
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  return "dark";
 }
 
 function applyTheme(theme: Theme) {
